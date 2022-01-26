@@ -1,0 +1,23 @@
+Fluxo: 
+Usuário que não precisa de login cria seu nickname > Clica em começar
+Home page > usuario vai colocar o link do chat que o amigo dele criou na barra de pesquisas
+Com o link o usuário terá acesso ao chat anonimo e pode ser excluido clicando na lixeira
+
+
+Possiveis entidades do app:
+- Chat: {oficial: boolean}
+|--Mensagem [] :{nick, mensagem, horario que foi enviada}
+
+Variaveis de AsyncStorage:
+- Nick do usuário
+- id dos chats que o usuário criar/entrar
+
+Algumas Funcionalidades básicas:
+- Não é possivel EXCLUIR um chat permanentemente, vc apenas pode sair dele, mesmo se for o criador!
+- Escolha bem o seu nick, pois não será possível altera-lo nesta primeira versão
+- Os chats se atualizarão sozinhos a cada 10 segundos, então as mensagens terão esse pequeno atraso!
+- Não será possivel enviar fotos pelo chat
+- Login será uma funcionalidade futura, como o sistema não necessáriamente precisaria de um login pra vc utilizar o chat, o login n será necessário
+- A chave de acesso para os chats será gerada de forma aleatória quando um chat for criado, não sendo possível alterar NADA
+- No icone de informações será apenas exibida a quantidade de pessoas presentes no chat e um botão para copiar para a área de transferencia o código do chat, assim podendo mais gente participar
+- Chats oficiais de aplicativo serão disponibilizados futuramente num forum do site do app
